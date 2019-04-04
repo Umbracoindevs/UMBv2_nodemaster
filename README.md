@@ -14,7 +14,7 @@ BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
 
 
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
-<a href="https://www.vultr.com/?ref=6903922"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
+<a href="https://www.vultr.com/?ref=7607572"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 
 ## Supported masternode projects
 
@@ -62,41 +62,41 @@ git clone https://github.com/masternodes/vps.git && cd vps
 Install & configure your desired master node with options:
 
 ```bash
-./install.sh -p pivx
+./install.sh -p umbra
 ```
 
 ## Examples for typical script invocation
 
 These are only a couple of examples for typical setups. Check my [easy step-by-step guide for [vultr](/docs/masternode_vps.md) that will guide you through the hardest parts.
 
-**Install & configure 4 PIVX masternodes:**
+**Install & configure 4 UMBRA masternodes:**
 
 ```bash
-./install.sh -p pivx -c 4
+./install.sh -p umbra -c 4
 ```
 
-**Update daemon of previously installed PIVX masternodes:**
+**Update daemon of previously installed UMBRA masternodes:**
 
 ```bash
-./install.sh -p pivx -u
+./install.sh -p umbra -u
 ```
 
-**Install 6 PIVX masternodes with the git release tag "tags/v3.0.5.1"**
+**Install 6 UMBRA masternodes with the git release tag "V2.0"**
 
 ```bash
-./install.sh -p pivx -c 6 -r "tags/v3.0.5.1"
+./install.sh -p umbra -c 6 -r "V2.0"
 ```
 
-**Wipe all PIVX masternode data:**
+**Wipe all UMBRA masternode data:**
 
 ```bash
-./install.sh -p pivx -w
+./install.sh -p umbra -w
 ```
 
-**Install 2 PIVX masternodes and configure sentinel monitoring:**
+**Install 2 UMBRA masternodes and configure sentinel monitoring:**
 
 ```bash
-./install.sh -p pivx -c 2 -s
+./install.sh -p umbra -c 2 -s
 ```
 
 ## Options
