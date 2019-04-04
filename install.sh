@@ -278,7 +278,7 @@ function create_mn_configuration() {
         cd ${SCRIPTPATH}
 
         # create one config file per masternode
-        for NUM in $(seq 1 ${count}); do
+        for NUM in $(seq ${offset} $((offset+count-1))); do
         PASS=$(date | md5sum | cut -c1-24)
 
             # we dont want to overwrite an existing config file
@@ -313,7 +313,7 @@ function create_control_configuration() {
     # delete any old stuff that's still around
     rm -f /tmp/${CODENAME}_masternode.conf &>> ${SCRIPT_LOGFILE}
     # create one line per masternode with the data we have
-    for NUM in $(seq 1 ${count}); do
+    for NUM in $(seq ${offset} $((offset+count-1))); do
 		cat >> /tmp/${CODENAME}_masternode.conf <<-EOF
 			${CODENAME}MN${NUM} [${IPV6_INT_BASE}:${NETWORK_BASE_TAG}::${NUM}]:${MNODE_INBOUND_PORT} MASTERNODE_PRIVKEY_FOR_${CODENAME}MN${NUM} COLLATERAL_TX_FOR_${CODENAME}MN${NUM} OUTPUT_NO_FOR_${CODENAME}MN${NUM}
 		EOF
@@ -328,7 +328,7 @@ function create_systemd_configuration() {
 
     echo "* (over)writing systemd config files for masternodes"
     # create one config file per masternode
-    for NUM in $(seq 1 ${count}); do
+    for NUM in $(seq ${offset} $((offset+count-1))); do
     PASS=$(date | md5sum | cut -c1-24)
         echo "* (over)writing systemd config file ${SYSTEMD_CONF}/${CODENAME}_n${NUM}.service"  &>> ${SCRIPT_LOGFILE}
 		cat > ${SYSTEMD_CONF}/${CODENAME}_n${NUM}.service <<-EOF
@@ -438,6 +438,13 @@ function source_config() {
         then
             count=${SETUP_MNODES_COUNT}
             echo "No number given, installing default number of nodes: ${SETUP_MNODES_COUNT}" &>> ${SCRIPT_LOGFILE}
+        fi
+	
+
+	if [ -z "${offset}" ]
+	then
+	  offset=1
+	  echo "No offset given, starting at default ID number of nodes: ${offset}" &>> ${SCRIPT_LOGFILE}
         fi
 
         # release is from the default project config but can ultimately be
@@ -632,7 +639,7 @@ function final_call() {
         cp ${SCRIPTPATH}/scripts/activate_masternodes.sh ${MNODE_HELPER}_${CODENAME}
         echo "">> ${MNODE_HELPER}_${CODENAME}
 
-        for NUM in $(seq 1 ${count}); do
+        for NUM in $(seq ${offset} $((offset+count-1))); do 
             echo "systemctl daemon-reload" >> ${MNODE_HELPER}_${CODENAME}
             echo "systemctl enable ${CODENAME}_n${NUM}" >> ${MNODE_HELPER}_${CODENAME}
             echo "systemctl restart ${CODENAME}_n${NUM}" >> ${MNODE_HELPER}_${CODENAME}
@@ -714,7 +721,7 @@ function prepare_mn_interfaces() {
         cp ${NETWORK_CONFIG} ${NETWORK_CONFIG}.${DATE_STAMP}.bkp &>> ${SCRIPT_LOGFILE}
 
         # create the additional ipv6 interfaces, rc.local because it's more generic
-        for NUM in $(seq 1 ${count}); do
+        for NUM in $(seq ${offset} $((offset+count-1))); do
 
             # check if the interfaces exist
             ip -6 addr | grep -qi "${IPV6_INT_BASE}:${NETWORK_BASE_TAG}::${NUM}"
