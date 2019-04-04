@@ -109,11 +109,13 @@ The _install.sh_ script support the following parameters:
 | --net        | -n           | "4" / "6"           | ip type for masternode. (ipv)6 is default                           |
 | --release    | -r           | e.g. "tags/v3.0.4"  | a specific git tag/branch, defaults to latest tested                |
 | --count      | -c           | number              | amount of masternodes to be configured                              |
+| --offset     | -o           | --                  | if 3MN type -o 4 to start on the 4th masternode                     |
 | --update     | -u           | --                  | update specified masternode daemon, combine with -p flag            |
 | --sentinel   | -s           | --                  | install and configure sentinel for node monitoring                  |
 | --wipe       | -w           | --                  | uninstall & wipe all related master node data, combine with -p flag |
 | --help       | -h           | --                  | print help info                                                     |
 | --startnodes | -x           | --                  | starts masternode(s) after installation                             |
+
 
 ## Troubleshooting the masternode on the VPS
 
