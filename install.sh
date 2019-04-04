@@ -137,12 +137,12 @@ function swaphack() {
 if [ $(free | awk '/^Swap:/ {exit !$2}') ] || [ ! -f "/var/mnode_swap.img" ];then
     echo "* No proper swap, creating it"
     # needed because ant servers are ants
-    rm -f /var/mnode_swap.img
-    dd if=/dev/zero of=/var/mnode_swap.img bs=1024k count=${MNODE_SWAPSIZE} &>> ${SCRIPT_LOGFILE}
-    chmod 0600 /var/mnode_swap.img
-    mkswap /var/mnode_swap.img &>> ${SCRIPT_LOGFILE}
-    swapon /var/mnode_swap.img &>> ${SCRIPT_LOGFILE}
-    echo '/var/mnode_swap.img none swap sw 0 0' | tee -a /etc/fstab &>> ${SCRIPT_LOGFILE}
+    rm -f /swapfile
+    dd if=/dev/zero of=/swapfile bs=1024k count=${MNODE_SWAPSIZE} &>> ${SCRIPT_LOGFILE}
+    chmod 0600 /swapfile
+    mkswap /swapfile &>> ${SCRIPT_LOGFILE}
+    swapon /swapfile &>> ${SCRIPT_LOGFILE}
+    echo "/swapfile none swap swap default 0 0" >> etc/fstab &>> ${SCRIPT_LOGFILE}
     echo 'vm.swappiness=10' | tee -a /etc/sysctl.conf               &>> ${SCRIPT_LOGFILE}
     echo 'vm.vfs_cache_pressure=50' | tee -a /etc/sysctl.conf		&>> ${SCRIPT_LOGFILE}
 else
