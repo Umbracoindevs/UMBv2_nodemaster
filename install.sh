@@ -797,10 +797,18 @@ while true; do
                         shift;
                     fi
             ;;
+        -o|--offset) # Modification, adding offset parameter.
+            shift;
+            	    if [ -n "$1" ]; then
+            	         offset="$1";
+            	         shift;
+            	    fi
+	    ;;    
         -w|--wipe)
             shift;
                     wipe="1";
             ;;
+	    
         -s|--sentinel)
             shift;
                     sentinel="1";
