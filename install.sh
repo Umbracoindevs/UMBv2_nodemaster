@@ -134,7 +134,7 @@ function install_packages() {
 #
 function swaphack() {
 #check if swap is available
-if [ $(free | awk '/^Swap:/ {exit !$2}') ] || [ ! -f "/var/mnode_swap.img" ];then
+if [ $(free | awk '/^Swap:/ {exit !$2}') ] || [ ! -f "/swapfile" ];then
     echo "* No proper swap, creating it"
     # needed because ant servers are ants
     rm -f /swapfile
