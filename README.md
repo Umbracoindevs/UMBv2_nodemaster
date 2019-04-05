@@ -18,6 +18,8 @@ Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/9MgoBGy"><a href="//imgur.com/9MgoBGy"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
+<a href="https://www.imgur.com/9MgoBGy"><img src="https://imgur.com/9MgoBGy width="300" height="125"></a>
+
 <a href="https://www.vultr.com/?ref=7607572"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 
 ## Supported masternode projects
