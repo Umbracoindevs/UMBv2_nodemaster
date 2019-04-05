@@ -12,11 +12,11 @@ If this script helped you in any way, please contribute some feedback. BTC donat
 Nodemaster     BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
 Umbracoindevs  BTC 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
 Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
-
 ```
 
 
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
+<a href="https://m.do.co/c/43df5222d849"><img src="https://i.imgur.com/eUm6zkt.png"></a>
 <a href="https://www.vultr.com/?ref=7607572"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 
 ## Supported masternode projects
@@ -158,7 +158,9 @@ If this script helped you in any way, please contribute some feedback. BTC donat
 **Have fun, this is crypto after all!**
 
 ```
-BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+Nodemaster     BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+Umbracoindevs  BTC 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
+Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
 ```
 
 ## Management script (not yet implemented)
@@ -193,5 +195,4 @@ Ping me at contact@marsmenschen.com for questions and send some crypto my way if
 Nodemaster     BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
 Umbracoindevs  BTC 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
 Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
-
 ```
