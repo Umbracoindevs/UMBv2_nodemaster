@@ -15,7 +15,7 @@ Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
 ```
 
 
-Feel free to use my reflink to signup and receive a bonus w/ vultr:
+Feel free to use my reflink to signup and receive a bonus w/ vultr or digitalocean:
 
 <a href="https://m.do.co/c/43df5222d849"><img src="https://imgur.com/eUm6zkt.png"></a>
 
