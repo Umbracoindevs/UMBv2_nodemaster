@@ -19,7 +19,7 @@ Feel free to use my reflink to signup and receive a bonus w/ vultr or digitaloce
 
 <a href="https://m.do.co/c/43df5222d849"><img src="https://imgur.com/eUm6zkt.png"></a>
 
-<a href="https://www.vultr.com/?ref=7607572"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
+<a href="https://www.vultr.com/?ref=7984889-4F"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 
 ## Supported masternode projects
 
