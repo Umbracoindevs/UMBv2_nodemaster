@@ -9,8 +9,8 @@ If this script helped you in any way, please contribute some feedback. BTC donat
 **Have fun, this is crypto after all!**
 
 ```
-Nodemaster     BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
-Umbracoindevs  BTC 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
+Nodemaster     BTC: 33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+Umbracoindevs  BTC: 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
 Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
 ```
 
@@ -160,9 +160,9 @@ If this script helped you in any way, please contribute some feedback. BTC donat
 **Have fun, this is crypto after all!**
 
 ```
-Nodemaster     BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
-Umbracoindevs  BTC 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
-Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
+Nodemaster     BTC:  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+Umbracoindevs  BTC:  19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
+Umbracoindevs  BCH:  qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
 ```
 
 ## Management script (not yet implemented)
@@ -194,7 +194,7 @@ Ping me at contact@marsmenschen.com for questions and send some crypto my way if
 **Have fun, this is crypto after all!**
 
 ```
-Nodemaster     BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
-Umbracoindevs  BTC 19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
-Umbracoindevs  BCH: qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
+Nodemaster     BTC:  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+Umbracoindevs  BTC:  19D8BLAx3YCJme5GxNaUEtfKfHpBEbMX5L
+Umbracoindevs  BCH:  qp5zn73h8sur7ashfzvx4ykswu3rzx388uepz6gr23
 ```
